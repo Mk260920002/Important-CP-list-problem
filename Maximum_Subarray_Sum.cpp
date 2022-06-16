@@ -136,7 +136,7 @@ Node query(int node,int st,int end,int rs,int re){
         Node nullnode ;
         return nullnode;
     }
-    if(rs>=st && re<=end){
+    if(rs<=st && end<=re){
         return tree[node];
     }
     int mid=(st+end)/2;
